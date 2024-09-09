@@ -6,7 +6,7 @@
 #    By: cimy <cimy@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/01 16:27:09 by sshimura          #+#    #+#              #
-#    Updated: 2024/09/09 11:38:40 by cimy             ###   ########.fr        #
+#    Updated: 2024/09/09 11:54:49 by cimy             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ GREEN		:=	\033[32m
 END			:=	\033[0m
 
 ifeq ($(BONUS_FLAG),true)
-	$(OBJS) = $(OBJS) $(BONUS_OBJS)
+	$(OBJS) += $(BONUS_OBJS)
 endif
 
 $(DIR_OBJS)/%.o: $(DIR_SRCS)/%.c
